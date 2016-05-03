@@ -1,0 +1,8 @@
+[user]
+	email = ghovmand@csc.com
+	name = Gregers Hovmand
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
