@@ -8,3 +8,5 @@
 	st = status
 [core]
 	editor = vim
+[credential]
+	helper = cache
