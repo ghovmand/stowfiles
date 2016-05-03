@@ -11,7 +11,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-source /usr/share/zsh/site-contrib/powerline.zsh
+source ~/stowfiles/zsh/powerline.zsh
 
 alias ls='ls --color'
 
