@@ -1,5 +1,7 @@
 _POWERLINE_SOURCED="$0:A"
 
+echo $_POWERLINE_SOURCED
+
 _powerline_columns_fallback() {
 	if which stty &>/dev/null ; then
 		local cols="$(stty size 2>/dev/null)"
