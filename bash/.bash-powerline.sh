@@ -26,7 +26,7 @@ __powerline() {
     readonly BG_BASE01="\[$(tput setab 10)\]"
     readonly BG_BASE00="\[$(tput setab 11)\]"
     readonly BG_BASE0="\[$(tput setab 12)\]"
-    readonly BG_BASE1="\[$(tput setab 13)\]"
+    readonly BG_BASE1="\[$(tput setab 0)\]"
     readonly BG_BASE2="\[$(tput setab 7)\]"
     readonly BG_BASE3="\[$(tput setab 15)\]"
 
