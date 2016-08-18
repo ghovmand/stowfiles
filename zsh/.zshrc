@@ -1,6 +1,3 @@
-#source /usr/share/zsh/site-contrib/powerline.zsh
-#zstyle ':completion:*' menu select
-
 HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
