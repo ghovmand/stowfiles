@@ -1,18 +1,23 @@
 HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
-bindkey -e
+#bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/alex/.zshrc'
+#zstyle :compinstall filename '/home/alex/.zshrc'
 
-autoload -Uz compinit
-compinit
+#autoload -Uz compinit
+#compinit
 # End of lines added by compinstall
 
 source /usr/share/zsh/site-contrib/powerline.zsh
 
 alias ls='ls --color'
+
+ if [ -f ~/.git-completion.bash ]; then
+        . ~/.git-completion.bash
+fi
+
 
 
 # create a zkbd compatible hash;
