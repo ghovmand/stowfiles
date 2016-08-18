@@ -2672,7 +2672,7 @@ __gitk_main ()
 }
 
 if [[ -n ${ZSH_VERSION-} ]]; then
-	echo "WARNING: this script is deprecated, please see git-completion.zsh" 1>&2
+	#echo "WARNING: this script is deprecated, please see git-completion.zsh" 1>&2
 
 	autoload -U +X compinit && compinit
 

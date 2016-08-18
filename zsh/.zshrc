@@ -14,10 +14,11 @@ source /usr/share/zsh/site-contrib/powerline.zsh
 
 alias ls='ls --color'
 
- if [ -f ~/.git-completion.bash ]; then
-        . ~/.git-completion.bash
+if [ -f ~/.git-completion.bash ]; then
+       . ~/.git-completion.bash
 fi
 
+source ~/.bash-powerline.sh
 
 
 # create a zkbd compatible hash;
