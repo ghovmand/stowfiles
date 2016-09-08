@@ -12,4 +12,4 @@
 [credential]
 	helper = cache
 [commit]
-	template = /home/ghovmand/.git_commit_msg.txt
+	template = ~/.git_commit_msg.txt

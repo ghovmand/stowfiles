@@ -18,7 +18,7 @@ if [ -f ~/.git-completion.bash ]; then
        . ~/.git-completion.bash
 fi
 
-source ~/.bash-powerline.sh
+#source ~/.bash-powerline.sh
 
 
 # create a zkbd compatible hash;
