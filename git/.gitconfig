@@ -7,6 +7,7 @@
 	ci = commit
 	st = status
     gr = log --oneline --graph
+    rb = rebase --stat
 [core]
 	editor = vim
 [credential]
