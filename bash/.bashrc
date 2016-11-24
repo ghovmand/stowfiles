@@ -105,3 +105,4 @@ PS1='[\u@\h \W]\$ '
 BROWSER=/usr/bin/google-chrome-stable
 EDITOR=vim
 
+source /usr/share/nvm/init-nvm.sh
