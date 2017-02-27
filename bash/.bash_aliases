@@ -2,7 +2,9 @@
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    alias dc='docker-compose'
+    alias dc='pushd /home/${USER}/dev/docker-compose && docker-compose'
+    alias f="pushd"
+    alias b="popd"
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
@@ -15,6 +17,12 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+alias gwbootrun="./gradlew clean bootRun -Dspring.artemis.mode=native -Deureka.client.enabled=true -Deureka.client.registerWithEureka=true -Deureka.client.fetchRegistry=true"
+
+alias gwbootrunRibbon="./gradlew clean bootRun -Dspring.artemis.mode=native -Deureka.client.enabled=true -Deureka.client.registerWithEureka=true -Deureka.client.fetchRegistry=true -Dribbon.eureka.enabled=false -Dregister.ribbon.listOfServers=localhost:8094"
+
+alias gwdebug="./gradlew clean bootRun --debug-jvm -Dspring.artemis.mode=native -Deureka.client.enabled=true -Deureka.client.registerWithEureka=true -Deureka.client.fetchRegistry=true"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
