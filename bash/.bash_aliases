@@ -2,7 +2,7 @@
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    alias dc='pushd /home/${USER}/dev/docker-compose && docker-compose'
+    alias dc='pushd $HOME/dev/docker-compose > /dev/null && docker-compose'
     alias f="pushd"
     alias b="popd"
     #alias dir='dir --color=auto'
@@ -24,6 +24,8 @@ alias gwbootrunRibbon="./gradlew clean bootRun -Dspring.artemis.mode=native -Deu
 
 alias gwdebug="./gradlew clean bootRun --debug-jvm -Dspring.artemis.mode=native -Deureka.client.enabled=true -Deureka.client.registerWithEureka=true -Deureka.client.fetchRegistry=true"
 
+alias chromedebug="chromium --remote-debugging-port=9222 --user-data-dir=remote-profile"
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)"
@@ -31,3 +33,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
  alias gw='./gradlew'
  alias run='./gradlew clean bootRun'
+
+# Docker
+alias ds="docker stats --all --format 'table {{.Container}}\t{{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}'"
+

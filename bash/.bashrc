@@ -104,6 +104,7 @@ fi
 PS1='[\u@\h \W]\$ '
 export BROWSER=/usr/bin/chromium
 export CHROME_BIN=/usr/bin/chromium
+export CHROME_PATH=/usr/bin/chromium
 export EDITOR=vim
 
 #source /usr/share/nvm/init-nvm.sh
