@@ -37,3 +37,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # Docker
 alias ds="docker stats --all --format 'table {{.Container}}\t{{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}'"
 
+alias gwloaddatadev1="./gradlew clean cucumber -Ptags=~@Qa -D\"DEV_URL=147.29.92.18\""
+alias gwloaddatadev2="./gradlew clean cucumber -D"DEV_URL=147.29.92.19" -D\"cucumber.options=--tags @Alleroed\""
+alias gwloaddatadev3="./gradlew clean cucumber -D"DEV_URL=147.29.92.32" -D\"cucumber.options=--tags @Alleroed\""
+
