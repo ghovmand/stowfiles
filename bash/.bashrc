@@ -102,9 +102,17 @@ fi
  fi
 
 PS1='[\u@\h \W]\$ '
-export BROWSER=/usr/bin/chromium
-export CHROME_BIN=/usr/bin/chromium
-export CHROME_PATH=/usr/bin/chromium
+# /usr/bin/chromium
+#export BROWSER=/usr/bin/google-chrome-stable
+#export BROWSER=/usr/bin/chromium
+#export CHROME_BIN=/usr/bin/google-chrome-stable
+#export CHROME_BIN=/usr/bin/chromium
+
+export CHROME_BIN=/usr/bin/iridium-browser
+export CHROME_PATH=/usr/bin/iridium-browser
+
+#export CHROME_PATH=/usr/bin/google-chrome-stable
+#export CHROME_PATH=/usr/bin/chromium
 export EDITOR=vim
 
 #source /usr/share/nvm/init-nvm.sh

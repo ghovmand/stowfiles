@@ -18,6 +18,8 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+alias ping='prettyping --nolegend'
+
 alias gwbootrun="./gradlew clean bootRun -Dspring.artemis.mode=native -Deureka.client.enabled=true -Deureka.client.registerWithEureka=true -Deureka.client.fetchRegistry=true"
 
 alias gwbootrunRibbon="./gradlew clean bootRun -Dspring.artemis.mode=native -Deureka.client.enabled=true -Deureka.client.registerWithEureka=true -Deureka.client.fetchRegistry=true -Dribbon.eureka.enabled=false -Dregister.ribbon.listOfServers=localhost:8094"
