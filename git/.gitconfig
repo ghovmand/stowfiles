@@ -5,12 +5,20 @@
 	co = checkout
 	br = branch
 	ci = commit
-	st = status
+ca = commit --amend
+caa = commit -a --amend
+df = diff
+#	st = status
+st = status --short -uno
     pu = !git fetch && git rebase
     pum = !git fetch && git rebase origin/master
     gr = log --oneline --graph
     rb = rebase --stat
     glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+lg = log -p --pretty=fuller --abbrev-commit
+lgg = log --pretty=fuller --abbrev-commit --stat
+up = pull --rebase
+latest = log @^{/RELEASE-NOTES:.synced}..
 [core]
 	editor = vim
 [credential]

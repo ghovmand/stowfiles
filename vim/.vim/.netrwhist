@@ -1,5 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/ghovmand/dev/eoge-apps-gateway/src/main/resources/contracts'
-let g:netrw_dirhist_2='/home/ghovmand/dev/eoge-test-data-fixtures/src/main/resources/features/roskilde'
-let g:netrw_dirhist_3='postgres-data'
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/ghovmand/dev/eoge-apps-gateway/build'
