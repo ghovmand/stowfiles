@@ -1,24 +1,24 @@
 [user]
-	email = ghovmand@csc.com
+	email = ghovmand@dxc.com
 	name = Gregers Hovmand
 [alias]
 	co = checkout
 	br = branch
 	ci = commit
-ca = commit --amend
-caa = commit -a --amend
-df = diff
-#	st = status
-st = status --short -uno
-    pu = !git fetch && git rebase
-    pum = !git fetch && git rebase origin/master
-    gr = log --oneline --graph
-    rb = rebase --stat
-    glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
-lg = log -p --pretty=fuller --abbrev-commit
-lgg = log --pretty=fuller --abbrev-commit --stat
-up = pull --rebase
-latest = log @^{/RELEASE-NOTES:.synced}..
+	ca = commit --amend
+	caa = commit -a --amend
+	df = diff
+	st = status
+#	st = status --short -uno
+	pu = !git fetch && git rebase
+	pum = !git fetch && git rebase origin/master
+	gr = log --oneline --graph
+	rb = rebase --stat
+	glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	lg = log -p --pretty=fuller --abbrev-commit
+	lgg = log --pretty=fuller --abbrev-commit --stat
+	up = pull --rebase
+	latest = log @^{/RELEASE-NOTES:.synced}..
 [core]
 	editor = vim
 [credential]
@@ -26,23 +26,25 @@ latest = log @^{/RELEASE-NOTES:.synced}..
 [commit]
 	template = ~/.git_commit_msg.txt
 [color]
-    status = always
+	status = always
 [merge]
-  ff = only
+	ff = only
   # I pretty much never mean to do a real merge, since I use a rebase workflow.
   # Note: this global option applies to all merges, including those done during a git pull
   # https://git-scm.com/docs/git-config#git-config-mergeff
 
-  conflictstyle = diff3
+	conflictstyle = diff3
   # Standard diff is two sets of final changes. This introduces the original text before each side's changes.
   # https://git-scm.com/docs/git-config#git-config-mergeconflictStyle
 
 # A nice little github-like colorful, split diff right in the console.
 # via http://owen.cymru/github-style-diff-in-terminal-with-icdiff/
 [diff]
-  tool = icdiff
+	tool = icdiff
 [difftool]
-  prompt = false
+	prompt = false
 [difftool "icdiff"]
-  cmd = /usr/bin/icdiff --line-numbers $LOCAL $REMOTE
+	cmd = /usr/bin/icdiff --line-numbers $LOCAL $REMOTE
 
+[pull]
+	rebase = true
