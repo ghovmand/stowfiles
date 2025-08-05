@@ -33,13 +33,14 @@ alias chromedebug="chromium --remote-debugging-port=9222 --user-data-dir=remote-
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)"
  "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
- alias gw='./gradlew'
- alias run='./gradlew clean bootRun'
+alias gw='./gradlew clean'
+alias run='./gradlew clean bootRun'
 
-# Docker
-alias ds="docker stats --all --format 'table {{.Container}}\t{{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}'"
+if test -f /usr/bin/batcat; then
+  alias cat='batcat'
+fi
 
-alias gwloaddatadev1="./gradlew clean cucumber -Ptags=~@Qa -D\"DEV_URL=147.29.92.18\""
-alias gwloaddatadev2="./gradlew clean cucumber -D"DEV_URL=147.29.92.19" -D\"cucumber.options=--tags @Alleroed\""
-alias gwloaddatadev3="./gradlew clean cucumber -D"DEV_URL=147.29.92.32" -D\"cucumber.options=--tags @Alleroed\""
+gcp() {
+    git commit "$1" -m "$2" && git push
+}
 
