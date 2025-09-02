@@ -44,3 +44,4 @@ gcp() {
     git commit "$1" -m "$2" && git push
 }
 
+alias gemini='npx https://github.com/google-gemini/gemini-cli'
