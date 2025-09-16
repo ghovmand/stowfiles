@@ -45,4 +45,3 @@ gcp() {
 }
 
 alias gemini='npx https://github.com/google-gemini/gemini-cli'
-alias ng='npx ng'
